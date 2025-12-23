@@ -12,6 +12,8 @@ class ColorsManager {
   // Never use pure white (#FFFFFF) as it's too harsh.
   // ============================================================
 
+
+  static const Color green = Color(0xFF008000);
   /// Cream / Off-White - Warmer alternative to white
   static const Color cream = Color(0xFFFDFBF7);
 

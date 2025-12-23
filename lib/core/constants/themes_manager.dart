@@ -53,7 +53,6 @@ class ThemesManager {
       // BACKGROUND COLORS
       // Cream instead of white to reduce sensory glare
       scaffoldBackgroundColor: ColorsManager.cream,
-      canvasColor: ColorsManager.cream,
 
       // TEXT THEME
       // Using Verdana/Arial - wide letter spacing aids reading
@@ -408,12 +407,13 @@ class ThemesManager {
 
       // TAB BAR THEME
       tabBarTheme: TabBarThemeData(
-        labelColor: ColorsManager.communicationBlue,
-        unselectedLabelColor: ColorsManager.focusState,
+        labelColor: ColorsManager.softBlack,
+        unselectedLabelColor: ColorsManager.green.withAlpha(128),
         labelStyle: StylesManager.getButtonPrimary(),
         unselectedLabelStyle: StylesManager.getButtonSecondary(),
-        indicatorColor: ColorsManager.communicationBlue,
-        indicatorSize: TabBarIndicatorSize.label,
+        indicatorColor: ColorsManager.green,
+        indicatorSize: TabBarIndicatorSize.tab,
+        dividerColor: Colors.transparent,
       ),
 
       // POPUP MENU THEME
@@ -500,7 +500,6 @@ class ThemesManager {
       // BACKGROUND COLORS
       // Soft black instead of pure black to reduce harsh contrast
       scaffoldBackgroundColor: ColorsManager.softBlack,
-      canvasColor: ColorsManager.softBlack,
 
       // TEXT THEME
       // Using cream text on dark background - softer than pure white
