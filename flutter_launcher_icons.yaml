@@ -1,0 +1,11 @@
+flutter_launcher_icons:
+  image_path: "assets/images/spectra_logo.png"
+
+  android: true
+
+  ios: true
+  remove_alpha_ios: true
+
+  icon_background_color: "#FDFBF7"
+  icon_background_color_dark: "#1C1C1E"
+

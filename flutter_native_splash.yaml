@@ -1,0 +1,16 @@
+flutter_native_splash:
+  color: "#FDFBF7"
+  color_dark: "#1C1C1E"
+
+  image: assets/images/spectra_logo.png
+
+  fullscreen: true
+
+  android_12:
+    color: "#FDFBF7"
+    color_dark: "#1C1C1E"
+
+    image: assets/images/spectra_logo.png    
+
+    icon_background_color: "#FDFBF7"
+    icon_background_color_dark: "#1C1C1E"

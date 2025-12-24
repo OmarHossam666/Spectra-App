@@ -13,7 +13,9 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemesManager.getTheme(SpectraThemeMode.dark),
+      theme: ThemesManager.getTheme(SpectraThemeMode.light),
+      darkTheme: ThemesManager.getTheme(SpectraThemeMode.dark),
+      themeMode: ThemeMode.system,
       home: const Placeholder(),
     );
   }
