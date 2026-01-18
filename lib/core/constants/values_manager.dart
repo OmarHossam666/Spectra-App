@@ -225,4 +225,183 @@ class ValuesManager {
   static const double letterSpacingNormal = 0.0;
   static const double letterSpacingWide = 0.5;
   static const double letterSpacingExtraWide = 1.0;
+
+  // ============================================================
+  // LOGIN SCREEN SPECIFIC VALUES
+  // ============================================================
+
+  /// Profile avatar primary size
+  static const double profileAvatarPrimary = 140.0;
+
+  /// Profile avatar secondary size
+  static const double profileAvatarSecondary = 100.0;
+
+  /// Profile glow padding
+  static const double profileGlowPadding = 20.0;
+
+  /// Profile glow blur radius
+  static const double profileGlowBlurRadius = 20.0;
+
+  /// Profile glow spread radius
+  static const double profileGlowSpreadRadius = 5.0;
+
+  /// Profile active indicator primary size
+  static const double profileIndicatorPrimary = 32.0;
+
+  /// Profile active indicator secondary size
+  static const double profileIndicatorSecondary = 24.0;
+
+  /// Profile avatar border width
+  static const double profileAvatarBorderWidth = 4.0;
+
+  /// Mascot size default
+  static const double mascotSizeDefault = 160.0;
+
+  /// Mascot size tablet
+  static const double mascotSizeTablet = 200.0;
+
+  /// Mascot size small
+  static const double mascotSizeSmall = 120.0;
+
+  /// Mascot fallback icon ratio
+  static const double mascotFallbackRatio = 0.6;
+
+  /// Mascot image ratio
+  static const double mascotImageRatio = 0.85;
+
+  /// Dialogue bubble max width
+  static const double dialogueBubbleMaxWidth = 140.0;
+
+  /// Pattern grid max width
+  static const double patternGridMaxWidth = 320.0;
+
+  /// Pattern icon size
+  static const double patternIconSize = 64.0;
+
+  /// Pattern icon selected size
+  static const double patternIconSelectedSize = 28.0;
+
+  /// Pattern placeholder border width
+  static const double patternPlaceholderBorderWidth = 2.0;
+
+  /// Pattern selected badge size
+  static const double patternSelectedBadgeSize = 24.0;
+
+  /// Biometric outer pulse size
+  static const double biometricOuterPulseSize = 96.0;
+
+  /// Biometric inner pulse size
+  static const double biometricInnerPulseSize = 80.0;
+
+  /// Biometric icon container size
+  static const double biometricIconContainerSize = 64.0;
+
+  /// Biometric icon size
+  static const double biometricIconSize = 40.0;
+
+  /// Parent avatar size
+  static const double parentAvatarSize = 64.0;
+
+  /// Parent avatar icon size
+  static const double parentAvatarIconSize = 32.0;
+
+  /// Help button compact size
+  static const double helpButtonCompactSize = 56.0;
+
+  /// Help button icon size
+  static const double helpButtonIconSize = 28.0;
+
+  /// Header balance width (for centering)
+  static const double headerBalanceWidth = 48.0;
+
+  /// PIN max length
+  static const int pinMaxLength = 4;
+
+  /// Pattern sequence length
+  static const int patternSequenceLength = 3;
+
+  // ============================================================
+  // HOME SCREEN SPECIFIC VALUES
+  // ============================================================
+
+  /// Profile avatar size
+  static const double homeProfileAvatarSize = 56.0;
+
+  /// Profile online indicator size
+  static const double homeOnlineIndicatorSize = 14.0;
+
+  /// Profile fallback icon size
+  static const double homeProfileFallbackIconSize = 32.0;
+
+  /// Time indicator button size
+  static const double homeTimeIndicatorSize = 48.0;
+
+  /// Rafiq character size
+  static const double homeRafiqSize = 100.0;
+
+  /// Rafiq image size
+  static const double homeRafiqImageSize = 85.0;
+
+  /// Rafiq fallback icon size
+  static const double homeRafiqFallbackIconSize = 60.0;
+
+  /// Activity icon container size
+  static const double homeActivityIconSize = 48.0;
+
+  /// Module card default height
+  static const double homeModuleCardHeight = 160.0;
+
+  /// Module card wide height
+  static const double homeModuleCardWideHeight = 90.0;
+
+  /// Module card icon container size
+  static const double homeModuleIconContainerSize = 64.0;
+
+  /// Module card icon size
+  static const double homeModuleIconSize = 40.0;
+
+  /// Module card wide icon container size
+  static const double homeModuleWideIconContainerSize = 56.0;
+
+  /// SOS button size
+  static const double homeSosButtonSize = 64.0;
+
+  /// Header shadow blur radius
+  static const double homeShadowBlurRadius = 15.0;
+
+  /// Header shadow offset Y
+  static const double homeShadowOffsetY = 5.0;
+
+  /// Now/Next bar shadow blur radius
+  static const double homeBarShadowBlurRadius = 20.0;
+
+  /// Now/Next bar shadow offset Y
+  static const double homeBarShadowOffsetY = 4.0;
+
+  /// Progress bar height
+  static const double homeProgressBarHeight = 4.0;
+
+  /// SOS button shadow blur radius
+  static const double homeSosShadowBlurRadius = 16.0;
+
+  /// Bottom nav shadow blur radius
+  static const double homeNavShadowBlurRadius = 20.0;
+
+  /// Bottom nav shadow offset Y
+  static const double homeNavShadowOffsetY = -4.0;
+
+  /// Card shadow blur radius
+  static const double homeCardShadowBlurRadius = 10.0;
+
+  /// Card shadow offset Y
+  static const double homeCardShadowOffsetY = 4.0;
+
+  /// Demo refresh delay
+  static const int homeRefreshDelayMs = 500;
+
+  /// Demo activity progress
+  static const double homeActivityProgress = 0.5;
+
+  /// Demo activity duration minutes
+  static const int homeActivityDurationMinutes = 30;
 }

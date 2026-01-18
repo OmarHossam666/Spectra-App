@@ -229,6 +229,70 @@ class ColorsManager {
         return companionNeutral;
     }
   }
+
+  // ============================================================
+  // LOGIN SCREEN SPECIFIC COLORS
+  // ============================================================
+
+  /// Emergency help banner light background
+  static const Color helpBannerLight = Color(0xFFFEE2E2); // Red 100
+
+  /// Emergency help banner text/icon color
+  static const Color helpBannerText = Color(0xFFDC2626); // Red 600
+
+  // ============================================================
+  // HOME SCREEN GRADIENT COLORS
+  // Dynamic sky gradient colors based on time of day
+  // ============================================================
+
+  /// Dark mode sky gradient start
+  static const Color skyDarkStart = Color(0xFF1E3A5F);
+
+  /// Dark mode sky gradient end
+  static const Color skyDarkEnd = Color(0xFF152238);
+
+  /// Morning sky gradient start
+  static const Color skyMorningStart = Color(0xFF87CEEB);
+
+  /// Morning sky gradient end
+  static const Color skyMorningEnd = Color(0xFFB4D7E8);
+
+  /// Afternoon sky gradient start
+  static const Color skyAfternoonStart = Color(0xFF64B5F6);
+
+  /// Afternoon sky gradient end
+  static const Color skyAfternoonEnd = Color(0xFF90CAF9);
+
+  /// Evening sky gradient start
+  static const Color skyEveningStart = Color(0xFFFFB74D);
+
+  /// Evening sky gradient end
+  static const Color skyEveningEnd = Color(0xFFFFCC80);
+
+  /// Night sky gradient start
+  static const Color skyNightStart = Color(0xFF3F51B5);
+
+  /// Night sky gradient end
+  static const Color skyNightEnd = Color(0xFF5C6BC0);
+
+  // ============================================================
+  // HOME MODULE ICON COLORS
+  // ============================================================
+
+  /// Talk module icon color (purple)
+  static const Color moduleTalkIcon = Color(0xFF9C27B0);
+
+  /// Feelings module icon color (pink)
+  static const Color moduleFeelingsIcon = Color(0xFFE91E63);
+
+  /// Learn module icon color (green)
+  static const Color moduleLearnIcon = Color(0xFF4CAF50);
+
+  /// Calm Space module icon color (teal)
+  static const Color moduleCalmIcon = Color(0xFF009688);
+
+  /// Breakfast activity background color
+  static const Color activityBreakfastBg = Color(0xFFFFF3E0);
 }
 
 /// Enum representing the emotional states of the Spectra Companion AI

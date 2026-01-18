@@ -239,4 +239,223 @@ class StringsManager {
     final buddy = buddyName ?? defaultBuddy;
     return '$completionMessagePrefix$childName$completionMessageMiddle$buddy$completionMessageSuffix';
   }
+
+  // ============================================================
+  // LOGIN SCREEN STRINGS
+  // ============================================================
+
+  /// Login welcome title
+  static const String loginWelcomeTitle = 'Welcome Back!';
+
+  /// Login subtitle
+  static const String loginSubtitle = 'Who is using the app?';
+
+  /// Child profile - tap hint
+  static const String loginChildHint = 'Tap to play';
+
+  /// Parent profile - subtitle
+  static const String loginParentHint = 'Settings & Reports';
+
+  /// Parent profile label
+  static const String loginGuardianLabel = 'Guardian';
+
+  /// Rafiq greeting for login
+  static const String loginRafiqGreeting = 'Hello! Who are you today?';
+
+  /// Child pattern login title
+  static const String loginPatternTitle = 'Tap your secret pictures';
+
+  /// Pattern hint text
+  static const String loginPatternHint = 'Pick your secret pictures';
+
+  /// Rafiq pattern hint
+  static const String loginRafiqPatternHint = 'Follow the stars!';
+
+  /// Pattern error message
+  static const String loginPatternError = 'Oops! Try again.';
+
+  /// Clear pattern button
+  static const String loginClearPattern = 'Start over';
+
+  /// Guardian access title
+  static const String loginGuardianAccess = 'Guardian Access';
+
+  /// Guardian verify prompt
+  static const String loginVerifyPrompt = 'Please verify it\'s you';
+
+  /// Biometric prompt
+  static const String loginBiometricPrompt = 'Touch sensor to unlock';
+
+  /// Huawei ID button
+  static const String loginHuaweiId = 'Sign in with Huawei ID';
+
+  /// PIN code link
+  static const String loginUsePinCode = 'Use PIN code instead';
+
+  /// PIN dialog title
+  static const String loginEnterPin = 'Enter PIN';
+
+  /// PIN hint
+  static const String loginPinHint = '4-digit PIN';
+
+  /// Login success child
+  static String getLoginSuccessChild(String name) => 'Welcome back, $name!';
+
+  /// Login success guardian
+  static const String loginSuccessGuardian = 'Guardian access granted';
+
+  /// Help button text
+  static const String loginHelpButton = 'I need help';
+
+  /// Help banner text
+  static const String loginHelpBanner = 'Help';
+
+  /// Help dialog title
+  static const String loginHelpTitle = 'Need Help?';
+
+  /// Help dialog content
+  static const String loginHelpContent =
+      'Tap on your picture to start.\n\nIf you need assistance, ask a trusted adult for help.';
+
+  /// Help dialog confirm
+  static const String loginHelpConfirm = 'Got it!';
+
+  /// Pattern tap hint
+  static const String loginPatternTapHint = 'Tap:';
+
+  /// Parent login title
+  static const String loginParentTitle = 'Parent Login';
+
+  /// Biometric verifying state
+  static const String loginBiometricVerifying = 'Verifying...';
+
+  /// Cancel button
+  static const String cancel = 'Cancel';
+
+  /// Confirm button
+  static const String confirm = 'Confirm';
+
+  /// Or divider text
+  static const String orDivider = 'or';
+
+  /// Child greeting prefix
+  static const String loginChildGreetingPrefix = 'Hi, ';
+
+  /// Child greeting suffix
+  static const String loginChildGreetingSuffix = '!';
+
+  /// Generate child greeting
+  static String getChildGreeting(String name) =>
+      '$loginChildGreetingPrefix$name$loginChildGreetingSuffix';
+
+  // ============================================================
+  // ASSET PATHS
+  // ============================================================
+
+  /// Rafiq mascot asset path
+  static const String assetRafiqMascot = 'assets/images/rafiq_mascot.png';
+
+  // ============================================================
+  // HOME SCREEN STRINGS
+  // ============================================================
+
+  /// Home - Now label
+  static const String homeNow = 'NOW';
+
+  /// Home - Next label
+  static const String homeNext = 'NEXT';
+
+  /// Home - All done message
+  static const String homeAllDone = 'All done for now!';
+
+  /// Home - Explore section title
+  static const String homeExplore = 'Explore';
+
+  /// Home - Talk module
+  static const String homeTalk = 'Talk to Me';
+
+  /// Home - Feelings module
+  static const String homeFeelings = 'How I Feel';
+
+  /// Home - Learn module
+  static const String homeLearn = "Let's Learn";
+
+  /// Home - Play module
+  static const String homePlay = 'Play Time';
+
+  /// Home - Calm Space module
+  static const String homeCalmSpace = 'Calm Room';
+
+  /// Home - Calm Space subtitle
+  static const String homeCalmSpaceSubtitle = 'Relax and breathe';
+
+  /// Home - SOS dialog title
+  static const String homeSosTitle = 'Need Help?';
+
+  /// Home - SOS dialog content
+  static const String homeSosContent =
+      'This will notify your parent or guardian that you need help.';
+
+  /// Home - SOS confirm button
+  static const String homeSosConfirm = 'Get Help';
+
+  /// Bottom nav - Home
+  static const String navHome = 'Home';
+
+  /// Bottom nav - Chat
+  static const String navChat = 'Chat';
+
+  /// Bottom nav - Settings
+  static const String navSettings = 'Settings';
+
+  // ============================================================
+  // HOME SCREEN - TIME BASED STRINGS
+  // ============================================================
+
+  /// Morning subtitle
+  static const String homeMorningSubtitle = 'Ready for today?';
+
+  /// Afternoon subtitle
+  static const String homeAfternoonSubtitle = 'Keep up the great work!';
+
+  /// Evening subtitle
+  static const String homeEveningSubtitle = 'Almost there!';
+
+  /// Night subtitle
+  static const String homeNightSubtitle = 'Time to rest soon';
+
+  /// Rafiq morning message
+  static const String homeRafiqMorning = 'Good morning! Ready for today?';
+
+  /// Rafiq afternoon message
+  static const String homeRafiqAfternoon = 'Having a great day!';
+
+  /// Rafiq evening message
+  static const String homeRafiqEvening = 'Almost done for today!';
+
+  /// Rafiq night message
+  static const String homeRafiqNight = 'Time to wind down!';
+
+  // ============================================================
+  // HOME SCREEN - DEMO DATA STRINGS
+  // ============================================================
+
+  /// Demo activity - Breakfast
+  static const String homeActivityBreakfast = 'Breakfast';
+
+  /// Demo activity - Breakfast ID
+  static const String homeActivityBreakfastId = 'breakfast';
+
+  /// Demo activity - Breakfast subtitle
+  static const String homeActivityBreakfastSubtitle = '10 mins left';
+
+  /// Demo activity - School Bus
+  static const String homeActivitySchoolBus = 'School Bus';
+
+  /// Demo activity - School Bus ID
+  static const String homeActivitySchoolBusId = 'school_bus';
+
+  /// Demo child avatar URL
+  static const String homeChildAvatarUrl =
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuD2uUb4GPvFXXLHypw7H4sAiT4NZEIfgXUZcfXBjoIFKxCwgOoXgluc_x1iZAbsgy860ucG6uCpIFaN5gK46JTSyBJnvzJvOAsDe_BxG6_Qb7Vt5ee8ExC2XLvnaZj9_q1O3VZeWbt72QAE_TY_hINeGX5GsE201KzhvRNr2LCHCe9wInB09JEqsINisfRx_u2jMtl0IMC2-ybErWLgha61MYDA08GsMXIsT_NP2IvY5An3pW4o2cjtmRNdWj4o3AgHk7dyzICz_9A';
 }
