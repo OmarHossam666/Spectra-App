@@ -27,7 +27,7 @@ class Spectra extends StatelessWidget {
           title: StringsManager.appName,
           theme: ThemesManager.lightTheme,
           darkTheme: ThemesManager.darkTheme,
-          themeMode: ThemeMode.light,
+          themeMode: ThemeMode.system,
           home: child,
         );
       },
