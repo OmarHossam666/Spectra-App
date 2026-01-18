@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:spectra/core/constants/colors_manager.dart';
 import 'package:spectra/core/constants/strings_manager.dart';
 import 'package:spectra/core/constants/values_manager.dart';
+import 'package:spectra/core/routes/routes_manager.dart';
 import 'package:spectra/features/onboarding/presentation/screens/child_profile_screen.dart';
 import 'package:spectra/features/onboarding/presentation/screens/mascot_intro_screen.dart';
 import 'package:spectra/features/onboarding/presentation/screens/role_selection_screen.dart';
@@ -93,7 +95,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
 
   void _handleOnboardingComplete() {
     // Save onboarding data and navigate to main app
-    _showCompletionMessage();
+    context.pushReplacement(RoutesManager.login);
   }
 
   void _showParentFlowNotImplemented() {
@@ -105,39 +107,6 @@ class _OnboardingPageState extends State<OnboardingPage> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(ValuesManager.radiusMedium.r),
         ),
-      ),
-    );
-  }
-
-  void _showCompletionMessage() {
-    // In production, navigate to main app
-    showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(ValuesManager.radiusLarge.r),
-        ),
-        title: const Text(StringsManager.completionTitle),
-        content: Text(
-          StringsManager.getCompletionMessage(
-            _onboardingData.childName ?? StringsManager.defaultFriendName,
-            _onboardingData.selectedAvatar?.name,
-          ),
-        ),
-        actions: [
-          TextButton(
-            onPressed: () {
-              Navigator.pop(context);
-              // Reset for demo purposes
-              setState(() {
-                _onboardingData = const OnboardingData();
-                _currentStep = 0;
-              });
-              _pageController.jumpToPage(0);
-            },
-            child: const Text(StringsManager.startOverButton),
-          ),
-        ],
       ),
     );
   }
