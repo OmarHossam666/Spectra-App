@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:spectra/core/constants/colors_manager.dart';
 import 'package:spectra/core/constants/values_manager.dart';
-import 'package:spectra/features/chat/chat.dart';
 import '../cubit/home_cubit.dart';
 import '../widgets/sky_header.dart';
 import '../widgets/now_next_bar.dart';
@@ -145,21 +144,7 @@ class _HomeScreenContent extends StatelessWidget {
 
   void _onModuleTap(BuildContext context, String moduleId) {
     final cubit = context.read<HomeCubit>();
-    cubit.navigateToModule(moduleId);
-
-    // TODO: Navigate to specific module using go_router
-    // For now, show feedback
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text('Opening $moduleId...'),
-        backgroundColor: ColorsManager.routineGreen,
-        behavior: SnackBarBehavior.floating,
-        shape: RoundedRectangleBorder(
-          borderRadius: ValuesManager.borderRadiusMedium,
-        ),
-        duration: const Duration(milliseconds: 800),
-      ),
-    );
+    cubit.navigateToModule(moduleId, context);
   }
 
   void _onSosTap(BuildContext context) {
@@ -184,17 +169,5 @@ class _HomeScreenContent extends StatelessWidget {
 
     // Navigate to different screens based on index
     // 0 = Home (current), 1 = Chat, 2 = Settings
-    if (index == 1) {
-      // Navigate to Chat screen
-      Navigator.of(
-        context,
-      ).push(MaterialPageRoute(builder: (_) => const ChatScreen()));
-      // Reset nav index to home after navigation
-      Future.delayed(const Duration(milliseconds: 100), () {
-        cubit.changeNavIndex(0);
-      });
-    } else if (index == 2) {
-      // TODO: Navigate to Settings screen
-    }
   }
 }

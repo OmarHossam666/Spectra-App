@@ -4,6 +4,7 @@ import 'package:spectra/core/constants/colors_manager.dart';
 import 'package:spectra/core/constants/strings_manager.dart';
 import 'package:spectra/core/constants/values_manager.dart';
 import 'package:spectra/core/constants/responsive_styles_manager.dart';
+import 'package:spectra/core/routes/routes_manager.dart';
 import 'module_card.dart';
 
 /// Grid of main modules on the home screen
@@ -51,7 +52,7 @@ class ModuleGrid extends StatelessWidget {
                         alpha: ValuesManager.opacityMedium,
                       ),
                       iconColor: ColorsManager.moduleTalkIcon,
-                      onTap: () => onModuleTap?.call('talk'),
+                      onTap: () => onModuleTap?.call(RoutesManager.chat),
                     ),
                   ),
                   SizedBox(width: ValuesManager.spaceDefault.w),

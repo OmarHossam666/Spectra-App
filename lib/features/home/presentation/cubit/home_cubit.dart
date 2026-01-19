@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
 import 'package:spectra/core/constants/colors_manager.dart';
 import 'package:spectra/core/constants/strings_manager.dart';
 import 'package:spectra/core/constants/values_manager.dart';
@@ -104,9 +105,8 @@ class HomeCubit extends Cubit<HomeState> {
   }
 
   /// Navigate to module
-  void navigateToModule(String moduleId) {
-    // TODO: Implement navigation to specific modules
-    // This would use go_router in production
+  void navigateToModule(String route, BuildContext context) {
+    context.push(route);
   }
 
   /// Refresh home data
