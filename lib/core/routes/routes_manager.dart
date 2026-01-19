@@ -5,4 +5,5 @@ class RoutesManager {
   static const String login = '/login';
   static const String register = '/register';
   static const String home = '/home';
+  static const String sentimentMirror = '/social_and_emotion/sentiment_mirror';
 }
