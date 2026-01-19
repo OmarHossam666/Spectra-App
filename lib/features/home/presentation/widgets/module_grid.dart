@@ -53,7 +53,7 @@ class ModuleGrid extends StatelessWidget {
                         alpha: ValuesManager.opacityMedium,
                       ),
                       iconColor: ColorsManager.moduleTalkIcon,
-                      onTap: () => onModuleTap?.call('talk'),
+                      onTap: () => onModuleTap?.call(RoutesManager.chat),
                     ),
                   ),
                   SizedBox(width: ValuesManager.spaceDefault.w),

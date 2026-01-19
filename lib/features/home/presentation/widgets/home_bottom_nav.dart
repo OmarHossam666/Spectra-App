@@ -26,12 +26,6 @@ class HomeBottomNav extends StatelessWidget {
       selectedIconData: Icons.home_rounded,
     ),
     NavItem(
-      id: 'chat',
-      label: StringsManager.navChat,
-      iconData: Icons.chat_bubble_outline_rounded,
-      selectedIconData: Icons.chat_bubble_rounded,
-    ),
-    NavItem(
       id: 'settings',
       label: StringsManager.navSettings,
       iconData: Icons.settings_outlined,

@@ -404,4 +404,80 @@ class ValuesManager {
 
   /// Demo activity duration minutes
   static const int homeActivityDurationMinutes = 30;
+
+  // ============================================================
+  // CHAT SCREEN VALUES
+  // ============================================================
+
+  /// Chat typing indicator delay in milliseconds
+  static const int chatTypingDelayMs = 1500;
+
+  /// Chat minimum typing delay
+  static const int chatMinTypingDelayMs = 800;
+
+  /// Chat maximum typing delay
+  static const int chatMaxTypingDelayMs = 2000;
+
+  /// Chat header height
+  static const double chatHeaderHeight = 72;
+
+  /// Chat avatar size
+  static const double chatAvatarSize = 48;
+
+  /// Chat avatar small size
+  static const double chatAvatarSmall = 32;
+
+  /// Chat input field height
+  static const double chatInputHeight = 56;
+
+  /// Chat message bubble max width percentage
+  static const double chatBubbleMaxWidthPercent = 0.75;
+
+  /// Chat message bubble padding horizontal
+  static const double chatBubblePaddingH = 16;
+
+  /// Chat message bubble padding vertical
+  static const double chatBubblePaddingV = 12;
+
+  /// Chat message bubble border radius
+  static const double chatBubbleRadius = 20;
+
+  /// Chat message bubble tail radius
+  static const double chatBubbleTailRadius = 4;
+
+  /// Chat quick reply height
+  static const double chatQuickReplyHeight = 40;
+
+  /// Chat quick reply border radius
+  static const double chatQuickReplyRadius = 20;
+
+  /// Chat quick reply spacing
+  static const double chatQuickReplySpacing = 8;
+
+  /// Chat message spacing
+  static const double chatMessageSpacing = 8;
+
+  /// Chat message group spacing
+  static const double chatMessageGroupSpacing = 16;
+
+  /// Chat input border radius
+  static const double chatInputRadius = 28;
+
+  /// Chat send button size
+  static const double chatSendButtonSize = 44;
+
+  /// Chat typing dot size
+  static const double chatTypingDotSize = 8;
+
+  /// Chat typing dot spacing
+  static const double chatTypingDotSpacing = 4;
+
+  /// Chat animation duration
+  static const int chatAnimationDurationMs = 300;
+
+  /// Chat list bottom padding
+  static const double chatListBottomPadding = 16;
+
+  /// Chat screen horizontal padding
+  static const double chatScreenPaddingH = 16;
 }

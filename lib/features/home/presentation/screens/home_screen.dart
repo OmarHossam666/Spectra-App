@@ -144,21 +144,7 @@ class _HomeScreenContent extends StatelessWidget {
 
   void _onModuleTap(BuildContext context, String moduleId) {
     final cubit = context.read<HomeCubit>();
-    cubit.navigateToModule(moduleId);
-
-    // TODO: Navigate to specific module using go_router
-    // For now, show feedback
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text('Opening $moduleId...'),
-        backgroundColor: ColorsManager.routineGreen,
-        behavior: SnackBarBehavior.floating,
-        shape: RoundedRectangleBorder(
-          borderRadius: ValuesManager.borderRadiusMedium,
-        ),
-        duration: const Duration(milliseconds: 800),
-      ),
-    );
+    cubit.navigateToModule(moduleId, context);
   }
 
   void _onSosTap(BuildContext context) {
@@ -181,7 +167,7 @@ class _HomeScreenContent extends StatelessWidget {
     final cubit = context.read<HomeCubit>();
     cubit.changeNavIndex(index);
 
-    // TODO: Navigate to different screens based on index
+    // Navigate to different screens based on index
     // 0 = Home (current), 1 = Chat, 2 = Settings
   }
 }

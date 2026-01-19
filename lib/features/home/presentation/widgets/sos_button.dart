@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:spectra/core/constants/colors_manager.dart';
 import 'package:spectra/core/constants/strings_manager.dart';
 import 'package:spectra/core/constants/values_manager.dart';
@@ -79,7 +80,7 @@ class SosButton extends StatelessWidget {
         ),
         actions: [
           TextButton(
-            onPressed: () => Navigator.pop(context),
+            onPressed: () => context.pop(),
             child: Text(
               StringsManager.cancel,
               style: ResponsiveStylesManager.getButtonSecondary(),
@@ -87,7 +88,7 @@ class SosButton extends StatelessWidget {
           ),
           FilledButton(
             onPressed: () {
-              Navigator.pop(context);
+              context.pop();
               onConfirm();
             },
             style: FilledButton.styleFrom(

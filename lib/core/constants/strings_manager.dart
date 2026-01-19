@@ -458,4 +458,129 @@ class StringsManager {
   /// Demo child avatar URL
   static const String homeChildAvatarUrl =
       'https://lh3.googleusercontent.com/aida-public/AB6AXuD2uUb4GPvFXXLHypw7H4sAiT4NZEIfgXUZcfXBjoIFKxCwgOoXgluc_x1iZAbsgy860ucG6uCpIFaN5gK46JTSyBJnvzJvOAsDe_BxG6_Qb7Vt5ee8ExC2XLvnaZj9_q1O3VZeWbt72QAE_TY_hINeGX5GsE201KzhvRNr2LCHCe9wInB09JEqsINisfRx_u2jMtl0IMC2-ybErWLgha61MYDA08GsMXIsT_NP2IvY5An3pW4o2cjtmRNdWj4o3AgHk7dyzICz_9A';
+
+  // ============================================================
+  // CHAT SCREEN STRINGS
+  // ============================================================
+
+  /// Chat screen title
+  static const String chatTitle = 'Chat with Rafiq';
+
+  /// Chat input placeholder
+  static const String chatInputHint = 'Type a message...';
+
+  /// Chat welcome message from Rafiq
+  static const String chatWelcomeMessage =
+      "Hi there! I'm Rafiq, your friendly companion. How can I help you today?";
+
+  /// Chat send button label
+  static const String chatSend = 'Send';
+
+  // ============================================================
+  // CHAT QUICK REPLIES
+  // ============================================================
+
+  /// Quick reply - Hello
+  static const String chatQuickReplyHello = 'Hello! 👋';
+
+  /// Quick reply - How are you
+  static const String chatQuickReplyHowAreYou = 'How are you?';
+
+  /// Quick reply - Help
+  static const String chatQuickReplyHelp = 'I need help';
+
+  /// Quick reply - Good
+  static const String chatQuickReplyGood = "I'm doing good!";
+
+  /// Quick reply - Not good
+  static const String chatQuickReplyNotGood = "I'm not feeling good";
+
+  /// Quick reply - Thanks
+  static const String chatQuickReplyThanks = 'Thank you!';
+
+  /// Quick reply - Tell more
+  static const String chatQuickReplyTellMore = 'Tell me more';
+
+  /// Quick reply - Feelings
+  static const String chatQuickReplyFeelings = 'Talk about feelings';
+
+  /// Quick reply - Play
+  static const String chatQuickReplyPlay = "Let's play!";
+
+  /// Quick reply - Learn
+  static const String chatQuickReplyLearn = 'Help me learn';
+
+  /// Quick reply - Happy
+  static const String chatQuickReplyHappy = "I'm happy 😊";
+
+  /// Quick reply - Sad
+  static const String chatQuickReplySad = "I'm sad 😢";
+
+  /// Quick reply - Calm
+  static const String chatQuickReplyCalm = "I'm calm 😌";
+
+  // ============================================================
+  // CHAT RESPONSES FROM RAFIQ
+  // ============================================================
+
+  /// Response to hello
+  static const String chatResponseHello =
+      "Hello friend! It's so nice to see you! How are you feeling today?";
+
+  /// Response to how are you
+  static const String chatResponseHowAreYou =
+      "I'm doing great, thank you for asking! I love chatting with you. What would you like to talk about?";
+
+  /// Response to sad feelings
+  static const String chatResponseSad =
+      "I'm sorry you're not feeling good. It's okay to feel sad sometimes. Would you like to talk about it? I'm here to listen.";
+
+  /// Response to happy feelings
+  static const String chatResponseHappy =
+      "That's wonderful! I'm so happy to hear that! 🌟 What's making you feel good today?";
+
+  /// Response to help request
+  static const String chatResponseHelp =
+      "Of course! I'm here to help you. What would you like help with? We can talk about feelings, learn something new, or play together!";
+
+  /// Response to scared feelings
+  static const String chatResponseScared =
+      "It's okay to feel scared sometimes. Take a deep breath with me. Breathe in... and out... You're safe, and I'm here with you.";
+
+  /// Response to angry feelings
+  static const String chatResponseAngry =
+      "I understand you're feeling angry. That's a strong feeling. Let's take some deep breaths together. Would you like to try a calming activity?";
+
+  /// Response to thanks
+  static const String chatResponseThanks =
+      "You're very welcome! I'm always happy to help. Is there anything else you'd like to chat about?";
+
+  /// Response to bye
+  static const String chatResponseBye =
+      "Goodbye friend! It was lovely chatting with you. Come back anytime you want to talk! 👋";
+
+  /// Response to play
+  static const String chatResponsePlay =
+      "Playing is so much fun! Would you like to go to the Play Time section? There are lots of fun activities waiting for you!";
+
+  /// Response to learn
+  static const String chatResponseLearn =
+      "Learning new things is exciting! What would you like to learn about? We can explore together in the Learn section!";
+
+  /// Response to feelings
+  static const String chatResponseFeelings =
+      "Talking about feelings is important! How are you feeling right now? Are you happy, sad, calm, or something else?";
+
+  /// Default response
+  static const String chatResponseDefault =
+      "That's interesting! Tell me more about it. I'm here to listen and chat with you.";
+
+  /// Typing indicator text
+  static const String chatTyping = 'Rafiq is typing...';
+
+  /// Clear chat button
+  static const String chatClear = 'Clear chat';
+
+  /// Chat cleared message
+  static const String chatCleared = 'Chat history cleared';
 }

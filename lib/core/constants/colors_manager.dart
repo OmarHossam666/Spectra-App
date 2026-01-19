@@ -293,6 +293,70 @@ class ColorsManager {
 
   /// Breakfast activity background color
   static const Color activityBreakfastBg = Color(0xFFFFF3E0);
+
+  // ============================================================
+  // CHAT SCREEN COLORS
+  // ============================================================
+
+  /// Chat user message bubble background
+  static const Color chatUserBubble = Color(0xFF6750A4);
+
+  /// Chat user message text color
+  static const Color chatUserText = Color(0xFFFFFFFF);
+
+  /// Chat bot message bubble background (light)
+  static const Color chatBotBubbleLight = Color(0xFFF3E8FF);
+
+  /// Chat bot message bubble background (dark)
+  static const Color chatBotBubbleDark = Color(0xFF2D2438);
+
+  /// Chat bot message text color (light)
+  static const Color chatBotTextLight = Color(0xFF1D1B20);
+
+  /// Chat bot message text color (dark)
+  static const Color chatBotTextDark = Color(0xFFE6E0E9);
+
+  /// Chat input field background (light)
+  static const Color chatInputBgLight = Color(0xFFF7F2FA);
+
+  /// Chat input field background (dark)
+  static const Color chatInputBgDark = Color(0xFF2B2930);
+
+  /// Chat quick reply background (light)
+  static const Color chatQuickReplyBgLight = Color(0xFFEADDFF);
+
+  /// Chat quick reply background (dark)
+  static const Color chatQuickReplyBgDark = Color(0xFF4A4458);
+
+  /// Chat quick reply text color (light)
+  static const Color chatQuickReplyTextLight = Color(0xFF6750A4);
+
+  /// Chat quick reply text color (dark)
+  static const Color chatQuickReplyTextDark = Color(0xFFD0BCFF);
+
+  /// Chat typing indicator dot color
+  static const Color chatTypingDot = Color(0xFF9C8AFF);
+
+  /// Chat timestamp text color (light)
+  static const Color chatTimestampLight = Color(0xFF79747E);
+
+  /// Chat timestamp text color (dark)
+  static const Color chatTimestampDark = Color(0xFF938F99);
+
+  /// Chat header gradient start
+  static const Color chatHeaderGradientStart = Color(0xFFEADDFF);
+
+  /// Chat header gradient end
+  static const Color chatHeaderGradientEnd = Color(0xFFF7F2FA);
+
+  /// Chat send button color
+  static const Color chatSendButton = Color(0xFF6750A4);
+
+  /// Chat send button disabled color
+  static const Color chatSendButtonDisabled = Color(0xFFCAC4D0);
+
+  /// Chat companion avatar border
+  static const Color chatAvatarBorder = Color(0xFFD0BCFF);
 }
 
 /// Enum representing the emotional states of the Spectra Companion AI
