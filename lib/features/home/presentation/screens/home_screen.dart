@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:spectra/core/constants/colors_manager.dart';
 import 'package:spectra/core/constants/values_manager.dart';
+import 'package:spectra/features/chat/chat.dart';
 import '../cubit/home_cubit.dart';
 import '../widgets/sky_header.dart';
 import '../widgets/now_next_bar.dart';
@@ -181,7 +182,19 @@ class _HomeScreenContent extends StatelessWidget {
     final cubit = context.read<HomeCubit>();
     cubit.changeNavIndex(index);
 
-    // TODO: Navigate to different screens based on index
+    // Navigate to different screens based on index
     // 0 = Home (current), 1 = Chat, 2 = Settings
+    if (index == 1) {
+      // Navigate to Chat screen
+      Navigator.of(
+        context,
+      ).push(MaterialPageRoute(builder: (_) => const ChatScreen()));
+      // Reset nav index to home after navigation
+      Future.delayed(const Duration(milliseconds: 100), () {
+        cubit.changeNavIndex(0);
+      });
+    } else if (index == 2) {
+      // TODO: Navigate to Settings screen
+    }
   }
 }

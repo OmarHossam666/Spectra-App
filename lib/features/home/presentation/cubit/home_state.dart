@@ -7,7 +7,7 @@ class HomeState extends Equatable {
     this.currentNavIndex = 0,
     this.currentActivity,
     this.nextActivity,
-    this.childName = 'Leo',
+    this.childName = 'Omar',
     this.childAvatarUrl,
     this.isOnline = true,
     this.timePeriod = TimePeriod.morning,

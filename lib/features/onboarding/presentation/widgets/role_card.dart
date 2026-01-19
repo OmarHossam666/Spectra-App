@@ -4,6 +4,7 @@ import 'package:spectra/core/constants/colors_manager.dart';
 import 'package:spectra/core/constants/strings_manager.dart';
 import 'package:spectra/core/constants/styles_manager.dart';
 import 'package:spectra/core/constants/values_manager.dart';
+import 'package:spectra/core/helpers/responsive_helper.dart';
 import '../../domain/models/user_role.dart';
 
 /// Role selection card for choosing between Child and Parent profiles
@@ -38,7 +39,6 @@ class RoleCard extends StatelessWidget {
             child: AnimatedContainer(
               duration: ValuesManager.durationMedium,
               curve: Curves.easeInOut,
-              height: 180.h,
               decoration: BoxDecoration(
                 color: backgroundColor,
                 borderRadius: BorderRadius.circular(
@@ -112,7 +112,7 @@ class RoleCard extends StatelessWidget {
                             color: Colors.white,
                           ),
                         ),
-                        SizedBox(height: ValuesManager.spaceSmall.h),
+                        VerticalSpace(ValuesManager.spaceLarge),
                         // Title
                         Text(
                           isChild

@@ -24,7 +24,7 @@ class ProfileSelectionView extends StatelessWidget {
     // Demo profiles - In production, load from storage/API
     final childProfile = const UserProfile(
       id: 'child_1',
-      name: 'Leo',
+      name: 'Omar',
       isChild: true,
       isActive: true,
     );

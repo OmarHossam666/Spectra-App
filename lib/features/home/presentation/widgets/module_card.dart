@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:spectra/core/constants/colors_manager.dart';
 import 'package:spectra/core/constants/values_manager.dart';
 import 'package:spectra/core/constants/responsive_styles_manager.dart';
+import 'package:spectra/core/helpers/responsive_helper.dart';
 
 /// A single module card for the home grid
 /// Represents a main app feature (Talk, Feelings, Learn, Play, etc.)
@@ -138,10 +139,7 @@ class ModuleCard extends StatelessWidget {
 
   Widget _buildWideContent(bool isDark) {
     return Padding(
-      padding: EdgeInsets.symmetric(
-        horizontal: ValuesManager.spaceLarge.w,
-        vertical: ValuesManager.spaceDefault.h,
-      ),
+      padding: EdgeInsets.symmetric(horizontal: ValuesManager.spaceLarge.w),
       child: Row(
         children: [
           // Text content
@@ -157,7 +155,7 @@ class ModuleCard extends StatelessWidget {
                   ).copyWith(fontWeight: FontWeight.bold),
                 ),
                 if (subtitle != null) ...[
-                  SizedBox(height: ValuesManager.spaceExtraSmall.h),
+                  VerticalSpace(ValuesManager.spaceExtraSmall),
                   Text(
                     subtitle!,
                     style: ResponsiveStylesManager.getBodyMedium(
@@ -170,7 +168,7 @@ class ModuleCard extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(width: ValuesManager.spaceDefault.w),
+          HorizontalSpace(ValuesManager.spaceDefault),
           // Icon container
           Container(
             width: ValuesManager.homeModuleWideIconContainerSize.r,
